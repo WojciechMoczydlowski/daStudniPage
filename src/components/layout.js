@@ -1,7 +1,12 @@
 import React from "react"
 
-export default ({ children }) => (
-  <div style={{ margin: `0 auto`, maxWidth: 650, padding: `0 1rem` }}>
-    {children}
-  </div>
-)
+import { Layout } from 'antd';
+
+const { Header, Footer, Content } = Layout;
+
+export default () => <Layout>
+<Header>Header</Header>
+<Content>Content</Content>
+<Footer>Footer</Footer>
+</Layout>
+
