@@ -1,6 +1,5 @@
 module.exports = {
   plugins: [
-    'gatsby-plugin-antd'
       `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
     {
