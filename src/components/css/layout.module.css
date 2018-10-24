@@ -3,4 +3,6 @@
     margin-right:auto;
     max-width: 1000px;
     text-align:center;
+    background-color: #eee;
+    min-height: 500px;
 }
