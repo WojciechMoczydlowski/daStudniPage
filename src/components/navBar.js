@@ -37,13 +37,12 @@ export default () => {
                         <Link to="/fraternitas" className="link">Fraternitas</Link>
                     </div>
                 </div>
-
-                <Link to="/scholaAndMinistranci" className="link">Schola i Ministranci</Link> 
+                <Link to="/scholaMinistranci" className="link">Schola i Ministranci</Link> 
                 <Link to="/kazania" className="link">Kazania</Link> 
                 <Link to="/galeria" className="link">Galeria</Link> 
                 <Link to="/fzk" className="link">FZK</Link> 
                 {/* <Link to="/kontakt" className="link">Kontakt</Link>  */}
-                <a href="https://www.diki.pl" style={divStyle2} className="icon" onclick="myFunction()">&#9776;</a>
+                <a href="https://www.diki.pl" style={divStyle2} className="icon">&#9776;</a>
             </div>
         </nav>);
 }
