@@ -1,12 +1,11 @@
 import React from "react"
-// import { css } from "react-emotion"
-// import { Link, graphql } from "gatsby"
-import Layout from "../components/layoutMain"
-
-export default (children) => {
-  return (
+import Layout from "../components/layout.js"
+import MainImage from "../components/mainImage.js";
+import ActualContent from "../components/actualContent.js";
+export default () => 
+  (
     <Layout>
-      {children}
+        <MainImage/>
+        <ActualContent/>
     </Layout>
   )
-}

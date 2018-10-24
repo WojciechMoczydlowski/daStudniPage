@@ -1,36 +1,49 @@
 import React from "react"
+import { Link } from "gatsby"
 import "./css/navBar.css"
 export default () => {
-    const divStyle1 = {
-        paddingLeft:'16px',
-    }
+    // const divStyle1 = {
+    //     paddingLeft: '16px',
+    // }
     const divStyle2 = {
-        fontSize:'15px',
+        fontSize: '15px',
     }
     return (
         <nav>
             <div className="topnav" id="myTopnav">
-                <a href="#home" class="active">Home</a>
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
+                <Link to="/" className="active link">Home</Link>
+                <Link to="/aktualnosci" className="link">Aktualności</Link>
+
                 <div className="dropdown">
-                    <button className="dropbtn">Dropdown
-      <i className="fa fa-caret-down"></i>
+                    <button className="dropbtn">Ludzie
+                        <i className="fa fa-caret-down"></i>
                     </button>
                     <div className="dropdown-content">
-                        <a href="https://www.diki.pl">Link 1</a>
-                        <a href="https://www.diki.pl">Link 2</a>
-                        <a href="https://www.diki.pl">Link 3</a>
+                        <Link to="/odpowiedzialni" className="link">Odpowiedzialni</Link>
+                        <Link to="/duszpasterze" className="link">Duszpasterze</Link>
                     </div>
                 </div>
-                <a href="https://www.diki.pl">About</a>
-                <a href="https://www.diki.pl" style={divStyle2} className="icon" onclick="myFunction()">&#9776;</a>
-            </div>
 
-            <div style={divStyle1}>
-                <h2>Responsive Topnav with Dropdown</h2>
-                <p>Resize the browser window to see how it works.</p>
-                <p>Hover over the dropdown button to open the dropdown menu.</p>
+                  <div className="dropdown">
+                    <button className="dropbtn">Spotkania
+                        <i className="fa fa-caret-down"></i>
+                    </button>
+                    <div className="dropdown-content">
+                        <Link to="/esencja" className="link">Esencja</Link>
+                        <Link to="/sztukaKochania" className="link">Sztuka Kochania</Link>
+                        <Link to="/czerpak" className="link">Czerpak</Link>
+                        <Link to="/kuznia" className="link">Kuźnia</Link>
+                        <Link to="/florentes" className="link">Florentes</Link>
+                        <Link to="/fraternitas" className="link">Fraternitas</Link>
+                    </div>
+                </div>
+
+                <Link to="/scholaAndMinistranci" className="link">Schola i Ministranci</Link> 
+                <Link to="/kazania" className="link">Kazania</Link> 
+                <Link to="/galeria" className="link">Galeria</Link> 
+                <Link to="/fzk" className="link">FZK</Link> 
+                {/* <Link to="/kontakt" className="link">Kontakt</Link>  */}
+                <a href="https://www.diki.pl" style={divStyle2} className="icon" onclick="myFunction()">&#9776;</a>
             </div>
         </nav>);
 }
