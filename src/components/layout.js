@@ -9,7 +9,6 @@ export default ({ children }) => (
     <div className={layoutStyle.mainLayout} >
         <NavBar/>
         {children}
-        <Content/>
         <Footer />
     </div>
 )

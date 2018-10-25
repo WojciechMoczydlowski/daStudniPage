@@ -1,3 +1,5 @@
+
+/* main Layout */
 .mainLayout{
     text-align:center;
     background-color: #F5FAFD;
@@ -5,6 +7,80 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* spotkania Layout */
+.title{
+    width:100%;
+    padding:10px 0 0 20px;
+    text-align: center;
+}
+
 .spotkaniaLayout{
     text-align:center;
+    padding:0px 20px 20px 20px;
+    margin:20px 25px 25px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flexContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+
+}
+
+.flex60{
+    flex:60%;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.flex40{
+    flex:40%;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.groupDescription{
+    margin-right:auto;
+    margin-left:auto;
+    padding:0 20px 20px 20px;
+}
+
+.groupImage{
+    max-width:500px;
+    max-height:450px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.personalDescription{
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:40px;
+}
+
+.personalImage{
+    border-radius:50%;
+}
+
+.groupText{
+    text-align: justify;
+}
+
+.odpTitle{
+    margin:0;
+}
+
+.personalInformation{
+    margin-bottom:5px;
+}
+p.personalInformation{
+    margin-top:5px;
+}
+h3.personalTitle{
+    margin-top:0px;
+}
+
+h3.groupTitle{
+    margin-top:0px;
 }
