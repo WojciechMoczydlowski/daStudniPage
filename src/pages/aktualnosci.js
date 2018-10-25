@@ -4,7 +4,7 @@ import Layout from "../components/layout.js"
 export default () => {
   return (
     <Layout>
-      Aktualnosci
+      <h1>Aktualności</h1>
     </Layout>
   )
 }

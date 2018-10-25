@@ -9,9 +9,9 @@ export default () => {
         fontSize: '15px',
     }
     return (
-        <nav>
+        <nav className="nav70">
             <div className="topnav" id="myTopnav">
-                <Link to="/" className="active link">Home</Link>
+                <Link to="/" className="link">StUdnia</Link>
                 <Link to="/aktualnosci" className="link">Aktualności</Link>
 
                 <div className="dropdown">
@@ -41,6 +41,7 @@ export default () => {
                 <Link to="/kazania" className="link">Kazania</Link> 
                 <Link to="/galeria" className="link">Galeria</Link> 
                 <Link to="/fzk" className="link">FZK</Link> 
+                <Link to="/kontakt" className="link">Kontakt</Link> 
                 {/* <Link to="/kontakt" className="link">Kontakt</Link>  */}
                 <a href="https://www.diki.pl" style={divStyle2} className="icon">&#9776;</a>
             </div>
